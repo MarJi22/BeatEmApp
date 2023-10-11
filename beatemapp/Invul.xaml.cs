@@ -23,5 +23,25 @@ namespace BeatEmApp
         {
             InitializeComponent();
         }
+        public void OnClick1(object sender, RoutedEventArgs e)
+        {
+                Window Main = new MainWindow();
+                this.Visibility = Visibility.Hidden;
+                Main.Show();
+        }
+
+        public void OnClick2(object sender, RoutedEventArgs e)
+        {
+            if (Nameplayer.Text != "naam speler 1" && Nameplayer2.Text != "naamspeler 2")
+            {
+                Window Game = new Game();
+                this.Visibility = Visibility.Hidden;
+                Game.Show();
+            }
+            else
+            {
+                Error.Visibility = Visibility.Visible;
+            }
+        }
     }
 }

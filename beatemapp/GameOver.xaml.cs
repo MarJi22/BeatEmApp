@@ -23,5 +23,19 @@ namespace BeatEmApp
         {
             InitializeComponent();
         }
+
+        public void OnClick1(object sender, RoutedEventArgs e)
+        {
+            Window Game = new Game();
+            this.Visibility = Visibility.Hidden;
+            Game.Show();
+        }
+
+        public void OnClick2(object sender, RoutedEventArgs e)
+        {
+            Window Main = new MainWindow();
+            this.Visibility = Visibility.Hidden;
+            Main.Show();
+        }
     }
 }

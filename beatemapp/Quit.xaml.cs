@@ -11,35 +11,38 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Windows.Navigation;
 
 namespace BeatEmApp
 {
     /// <summary>
-    /// Interaction logic for Leaderboard.xaml
+    /// Interaction logic for Quit.xaml
     /// </summary>
-    public partial class Leaderboard : Window
+    public partial class Quit : Window
     {
-        public Leaderboard()
+        public Quit()
         {
             InitializeComponent();
         }
 
         public void OnClick1(object sender, RoutedEventArgs e)
         {
-            Window Main = new MainWindow();
+            Window menu = new Menu();
             this.Visibility = Visibility.Hidden;
-            Main.Show();
-
+            menu.Show();
         }
 
         public void OnClick2(object sender, RoutedEventArgs e)
         {
-            Window Menu = new Menu();
-            this.Visibility = Visibility.Hidden;
-            Menu.Show();
-
+            if (EmailPlayer.Text != "email speler 1" && EmailPlayer2.Text != "email speler 2")
+            {
+                Window Main = new MainWindow();
+                this.Visibility = Visibility.Hidden;
+                Main.Show();
+            }
+            else
+            {
+                error.Visibility = Visibility.Visible;
+            }
         }
     }
-
 }
