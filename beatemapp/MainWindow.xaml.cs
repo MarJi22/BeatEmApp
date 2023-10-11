@@ -34,7 +34,17 @@ namespace BeatEmApp
 
         public void OnClick2(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("hello");
+            Window Leader = new Leaderboard();
+            this.Visibility = Visibility.Hidden;
+            Leader.Show();
         }
+
+        public void OnClick3(object sender, RoutedEventArgs e)
+        {
+            Window Help = new Help();
+            this.Visibility = Visibility.Hidden;
+            Help.Show();
+        }
+
     }
 }
