@@ -85,27 +85,27 @@ namespace BeatEmApp
                 moveDown2 = true;
             }
 
-            if (e.Key == Key.Left)
+            if (e.Key == Key.J)
             {
                 moveLeft = true;
             }
 
-            if (e.Key == Key.Right)
+            if (e.Key == Key.L)
             {
                 moveRight = true;
             }
 
-            if (e.Key == Key.Up)
+            if (e.Key == Key.I)
             {
                 moveUp = true;
             }
 
-            if (e.Key == Key.Down)
+            if (e.Key == Key.K)
             {
                 moveDown = true;
             }
 
-            if (e.Key == Key.L)
+            if (e.Key == Key.Enter)
             {
                 Window GameOver = new GameOver();
                 this.Visibility = Visibility.Hidden;
@@ -135,22 +135,22 @@ namespace BeatEmApp
                 moveDown2 = false;
             }
 
-            if (e.Key == Key.Left)
+            if (e.Key == Key.J)
             {
                 moveLeft = false;
             }
 
-            if (e.Key == Key.Right)
+            if (e.Key == Key.L)
             {
                 moveRight= false;
             }
 
-            if (e.Key == Key.Up)
+            if (e.Key == Key.I)
             {
                 moveUp= false;
             }
 
-            if (e.Key == Key.Down)
+            if (e.Key == Key.K)
             {
                 moveDown= false;
             }
